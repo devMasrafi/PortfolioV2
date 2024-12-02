@@ -43,7 +43,7 @@ const ExtraProject = () => {
           ],
         },
         {
-          image: "/images/projectImages/project-5-Banner.jpg",
+          image: "/images/projectImages/project-5-banner.jpg",
           titile: "Dev Masrafi",
           details:
             "my very own portfolio based on my experience and tech skills. to show the experience and result of my hard works",
