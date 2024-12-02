@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+
 export default function Home() {
   const mainSkill = [
     { skillName: "node js" },
@@ -87,6 +89,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+      {/* footer */}
+
+      <Footer/>
     </main>
   );
 }
