@@ -1,3 +1,4 @@
+import ExtraProject from "@/components/ExtraProject";
 import Footer from "@/components/Footer";
 import ProjectSection from "@/components/ProjectSection";
 import Social from "@/components/Social";
@@ -96,6 +97,7 @@ export default function Home() {
 
       {/* project */}
       <ProjectSection />
+      <ExtraProject />
 
       {/* footer */}
       <Footer />
