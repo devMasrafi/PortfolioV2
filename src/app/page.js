@@ -1,101 +1,92 @@
-import Image from "next/image";
-
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const mainSkill = [
+    { skillName: "node js" },
+    { skillName: "mongoDb" },
+    { skillName: "ReactJS/native" },
+    { skillName: "nextJs" },
+    { skillName: "ExpressJs" },
+    { skillName: "JavaScript" },
+    { skillName: "Figma" },
+  ];
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <main>
+      <section>
+        <div className="container mx-auto ">
+          <div className="text-center uppercase lg:mt-[15rem]">
+            <h2 className="lg:text-6xl font-bold italic">web developer</h2>
+            <p className="relative lg:text-lg underline underline-offset-[0.5rem] lg:my-3">
+              lets give your imagination a way to make reality
+            </p>
+            <h2 className="lg:text-6xl font-bold italic">and designer</h2>
+          </div>
+
+          <div className="lg:mt-[18rem] lg:text-center">scroll down</div>
+
+          <div className="lg:mt-[3rem]"></div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <section className="lg:my-[10rem]">
+        <div className="container mx-auto">
+          <div className="lg:w-[50rem] mx-auto">
+            <div className="flex">
+              <div>
+                <img
+                  className="lg:h-[32rem] lg:w-[24rem] rounded-md"
+                  src="/images/aboutMe.jpg"
+                  alt="About Me"
+                />
+              </div>
+              <div className="relative lg:w-[22rem] lg:mt-[20rem]">
+                <div className="bg-mainBg absolute left-[-2rem] p-3 rounded-lg">
+                  <h3 className="lg:text-2xl lg:font-bold tracking-wider">
+                    Hello there!
+                  </h3>
+                  <h2 className="lg:text-4xl lg:font-bold">
+                    My name is Masrafi Mondol. I am a
+                    <span className="text-orange-400"> web designer</span> and
+                    <span className="text-orange-500"> developer</span>, and I
+                    code vanilla
+                    <span className="text-orange-300">
+                      {" "}
+                      &#40;most of my time&#41;
+                    </span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex lg:mt-[8rem] lg:justify-evenly">
+            {/* About Me Text */}
+            <div className="lg:w-[34rem]">
+              <h2 className="lg:text-3xl lg:font-bold capitalize tracking-wider lg:pb-4">
+                my journey
+              </h2>
+              <p className="lg:text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+                illo dolore quaerat? Eum officiis voluptates, a tempore quae
+                nobis corrupti nihil porro voluptatem aperiam dolores eos
+                molestiae ex expedita et.
+              </p>
+            </div>
+            {/* Most Used Skills */}
+            <div>
+              <h2 className="lg:text-2xl capitalize lg:pb-[1rem]">most used</h2>
+              <div className="lg:w-[22rem] flex flex-wrap gap-3">
+                {mainSkill.map((item) => (
+                  <div
+                    key={item.skillName}
+                    className="px-2 py-1 border-2 border-darkBlue rounded-md"
+                  >
+                    <h2>{item.skillName}</h2>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
