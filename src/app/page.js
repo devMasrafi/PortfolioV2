@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import Social from "@/components/Social";
 
 export default function Home() {
   const mainSkill = [
@@ -25,7 +26,9 @@ export default function Home() {
 
           <div className="lg:mt-[18rem] lg:text-center">scroll down</div>
 
-          <div className="lg:mt-[3rem]"></div>
+          <div className="lg:mt-[3rem]">
+            <Social />
+          </div>
         </div>
       </section>
 
@@ -90,10 +93,9 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* footer */}
 
-      <Footer/>
+      <Footer />
     </main>
   );
 }
