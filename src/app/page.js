@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import ProjectSection from "@/components/ProjectSection";
 import Social from "@/components/Social";
 
 export default function Home() {
@@ -93,8 +94,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* footer */}
+      {/* project */}
+      <ProjectSection />
 
+      {/* footer */}
       <Footer />
     </main>
   );
